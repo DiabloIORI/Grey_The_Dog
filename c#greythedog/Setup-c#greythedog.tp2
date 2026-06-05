@@ -238,6 +238,7 @@ END
       LAF HANDLE_CHARSETS
         INT_VAR
           infer_charsets = 1
+		  from_utf8 = 1
         STR_VAR
 	  default_language = ~english~
           tra_path = EVAL ~c#greythedog/tra/autotra~
@@ -284,6 +285,12 @@ LANGUAGE ~Russian~
          ~c#greythedog/tra/russian/baf.tra~
 	 ~c#greythedog/tra/russian/journal.tra~
 
+LANGUAGE ~Simplified Chinese~
+         ~schinese~   
+         ~c#greythedog/tra/schinese/setup.tra~
+         ~c#greythedog/tra/schinese/game.tra~
+         ~c#greythedog/tra/schinese/baf.tra~
+	 ~c#greythedog/tra/schinese/journal.tra~
 
 BEGIN  @90004 /* ~Grey The Dog NPC~ */
 DESIGNATED 0
